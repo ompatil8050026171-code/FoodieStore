@@ -227,6 +227,19 @@ DAO interfaces and implementations handle database operations.
 ```
 FoodieStore
 │
+├── Screenshots
+│   ├── cart.png
+│   ├── checkout.png
+│   ├── home.png
+│   ├── login.png
+│   ├── menu.png
+│   ├── orderConfirmation.png
+│   ├── orderDetails.png
+│   ├── orderHistory.png
+│   ├── profile.png
+│   ├── register.png
+│   └── restaurant.png
+│
 ├── src/main/java
 │   └── com.FoodieStore
 │
@@ -254,6 +267,7 @@ FoodieStore
 │       │   ├── User
 │       │   ├── Restaurant
 │       │   ├── Menu
+│       │   ├── Cart
 │       │   ├── CartItem
 │       │   ├── Order
 │       │   └── OrderItem
@@ -302,9 +316,8 @@ FoodieStore
 | `Utility`    | Contains database connection and utility classes          |
 | `webapp`     | Contains JSP pages, images and web resources              |
 ```
-```
 1️⃣ User Registration
-
+```
 User
  ↓
 Register Page
@@ -316,9 +329,9 @@ User DAO
 MySQL Database
  ↓
 Account Created
-
+```
 2️⃣ User Login
-
+```
 User
  ↓
 Login Page
@@ -332,9 +345,9 @@ Validate Credentials
 Create HTTP Session
  ↓
 Home Page
-
+```
 3️⃣ Browse Restaurants
-
+```
 Home Page
  ↓
 Restaurant Servlet
@@ -361,9 +374,9 @@ Sort Option
  └───────────────────────┘
      ↓
 Sorted Restaurant List
-
+```
 Java Comparator classes are used to perform the sorting.
-
+```
 4️⃣ View Menu
 
 Select Restaurant
@@ -377,25 +390,28 @@ MySQL Database
 Menu Items
  ↓
 Menu Page
-
+```
 5️⃣ Menu Filtering and Sorting
-
 Users can filter menu items by food type.
+```
 Menu
  ↓
 Filter
  ├── VEG
  └── NON-VEG
+```
 Users can also sort menu items based on price.
+```
 Menu
  ↓
 Sort by Price
  ├── Price Ascending
  └── Price Descending
+```
 Java Comparator classes are used for price sorting.
 
 6️⃣ Add Items to Cart
-
+```
 Menu Page
  ↓
 Add Food Item
@@ -407,14 +423,28 @@ HashMap
 HTTP Session
  ↓
 Cart Page
-The cart is maintained temporarily using the user's HTTP session.
+```
 
+### 🛒 Cart Management
+
+The shopping cart is maintained using **HTTP Session and HashMap**.
+
+The `Cart` class manages the session-based cart, while `CartItem` represents each food item added to the cart.
+
+```text
+HTTP Session
+      ↓
+     Cart
+      ↓
 HashMap<Integer, CartItem>
+      ↓
+  Cart Items
+```
 
 The menu/food item ID is used as the key and the corresponding CartItem is stored as the value.
 
 7️⃣ Checkout
-
+```
 Cart
  ↓
 Checkout Page
@@ -430,9 +460,9 @@ Create Order
 Create Order Items
  ↓
 MySQL Database
-
+```
 8️⃣ Order History
-
+``|
 User
  ↓
 Order History
@@ -444,8 +474,9 @@ Order DAO
 MySQL Database
  ↓
 Display Orders
-
+```
 9️⃣ Profile Management
+```
 User
  ↓
 Profile Page
