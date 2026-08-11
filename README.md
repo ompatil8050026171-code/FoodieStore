@@ -462,7 +462,7 @@ Create Order Items
 MySQL Database
 ```
 8️⃣ Order History
-``|
+```
 User
  ↓
 Order History
