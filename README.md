@@ -247,7 +247,6 @@ FoodieStore
 │       │   ├── NameComparatorAscending
 │       │   ├── NameComparatorDescending
 │       │   ├── RatingsComparatorASC
-│       │   ├── RatingsComparatorDSC
 │       │   ├── MenuPriceComparatorASC
 │       │   └── MenuPriceComparatorDSC
 │       │
