@@ -717,8 +717,7 @@ Comparator Implementation
 Restaurant
  ├── Name Ascending
  ├── Name Descending
- ├── Rating Ascending
- └── Rating Descending
+ └──  Rating Ascending
 
 Menu
  ├── Price Ascending
