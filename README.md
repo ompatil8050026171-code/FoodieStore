@@ -557,6 +557,13 @@ New users can create an account by providing their required details.
 
 ![Home Page](Screenshots/home.png)
 
+---
+
+## 🍽️ Restaurant Page
+
+![Restaurant Page](Screenshots/restaurant.png)
+
+Users can select a restaurant and view its available menu items.
 The home page displays the available restaurants along with restaurant information.
 
 Users can sort restaurants by:
@@ -565,14 +572,6 @@ Users can sort restaurants by:
 - Name - Descending
 - Rating - Ascending
 - Rating - Descending
-
----
-
-## 🍽️ Restaurant Page
-
-![Restaurant Page](Screenshots/restaurant.png)
-
-Users can select a restaurant and view its available menu items.
 
 ---
 
